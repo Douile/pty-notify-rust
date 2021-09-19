@@ -1,0 +1,12 @@
+[package]
+name = "pt-notify"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+notify = "~4.0"
+notify-rust = "~4.5"
+users = "~0.11"
+
+[target.x86_64-unknown-linux-gnu]
+rustflags = ["-C", "target-feature=+crt-static"]
